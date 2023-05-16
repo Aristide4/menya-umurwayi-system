@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update Patient</title>
+  <link rel="stylesheet" type="text/css" href="./styles/update-patient.css">
+</head>
+
+<body>
+<header>
+<h1>Update Patient</h1>
+<nav>
+  <a href="dashboard.html">Back to Dashboard</a>
+</nav>
+</header>
+  <main>
+    <div class="container">
+      <h2>Update Patient</h2>
+      <form id="search-form">
+        <label for="email">Search by Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Search</button>
+      </form>
+
+      <form id="update-form" class="hidden">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" required>
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="MALE">Male</option>
+          <option value="FEMALE">Female</option>
+        </select>
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+        <label for="insuranceProvider">Insurance Provider:</label>
+        <input type="text" id="insuranceProvider" required>
+        <label for="medicalHistory">Medical History:</label>
+        <textarea id="medicalHistory" required></textarea>
+        <label for="reasonOfVisit">Reason of Visit:</label>
+        <textarea id="reasonOfVisit" required></textarea>
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="./js/update-patient.js"></script>
+</body>
+
+</html>
